@@ -7,6 +7,8 @@ public class GoToScene : MonoBehaviour
 {
 
     public OVRScreenFade fade;
+
+
     public void GoScene(string scene)
     {
         StartCoroutine(LoadAsync(scene));

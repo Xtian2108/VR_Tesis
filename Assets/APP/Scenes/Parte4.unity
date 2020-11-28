@@ -1673,6 +1673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dba552389b39e19438892b4414b3332d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fade: {fileID: 0}
   contador: 0
   textMesh: {fileID: 1623897077}
   textosArriba1: {fileID: 859492938}

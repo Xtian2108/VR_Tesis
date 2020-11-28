@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class AumentarNumero : MonoBehaviour
 {
+    public OVRScreenFade fade;
     public int contador;
     public TextMeshProUGUI textMesh;
     public GameObject textosArriba1;
@@ -14,6 +16,8 @@ public class AumentarNumero : MonoBehaviour
     public GameObject hashtag2;
     public GameObject verFalsosComentarios;
     public GameObject darOpinion;
+
+    private bool pasarEscena;
 
     public void AumentarContador()
     {
@@ -46,6 +50,7 @@ public class AumentarNumero : MonoBehaviour
         if(contador == 6)
         {
             darOpinion.SetActive(true);
+            StartCoroutine(InteraccionFinal(3f, "Parte4"));
         }
     }
 
@@ -57,5 +62,19 @@ public class AumentarNumero : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         this.GetComponent<Button>().interactable = true;
         yield return null;
+    }
+
+
+    public IEnumerator InteraccionFinal(float timer,string scene)
+    {
+        yield return new WaitForSeconds(timer);
+        fade.fadeColor = Color.red;
+        StartCoroutine(fade.Fade(0f, 1f));
+        yield return new WaitForSeconds(2f);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
