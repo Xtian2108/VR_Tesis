@@ -20,9 +20,13 @@ public class TocarBoton : MonoBehaviour
     {
         if (other.tag == "Mano")
         {
-            contador++;
-            txtmesh.text = contador.ToString();
+            int randomNumber = Random.Range(0,4);
             realBoton.transform.localScale = botonApretado;
+            if (randomNumber == 0 || randomNumber == 1)
+            {
+                contador++;
+                txtmesh.text = contador.ToString();
+            }
         }
     }
 

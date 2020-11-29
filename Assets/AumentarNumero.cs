@@ -17,6 +17,8 @@ public class AumentarNumero : MonoBehaviour
     public GameObject verFalsosComentarios;
     public GameObject darOpinion;
 
+    public GameObject cabeza;
+
     private bool pasarEscena;
 
     public void AumentarContador()
@@ -50,7 +52,10 @@ public class AumentarNumero : MonoBehaviour
         if(contador == 6)
         {
             darOpinion.SetActive(true);
-            StartCoroutine(InteraccionFinal(3f, "Parte4"));
+            if(pasarEscena == false)
+            {
+                StartCoroutine(InteraccionFinal(3f, "Parte4"));
+            }
         }
     }
 
@@ -67,8 +72,10 @@ public class AumentarNumero : MonoBehaviour
 
     public IEnumerator InteraccionFinal(float timer,string scene)
     {
+        pasarEscena = true;
         yield return new WaitForSeconds(timer);
-      //  fade.fadeColor = Color.red;
+        //fade.fadeColor = Color.red;
+        cabeza.SetActive(true);
         StartCoroutine(fade.Fade(0f, 1f));
         yield return new WaitForSeconds(2f);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);

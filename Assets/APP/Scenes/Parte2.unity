@@ -5512,7 +5512,7 @@ MonoBehaviour:
     maxAllowedPerFrameDistanceDifference: 0.003
     smoothsRotation: 0
     maxAllowedPerFrameAngleDifference: 1.5
-  validCollisionColor: {r: 0, g: 0.96311355, b: 1, a: 1}
+  validCollisionColor: {r: 0, g: 0.9647059, b: 1, a: 1}
   invalidCollisionColor: {r: 0, g: 0.96470594, b: 1, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0

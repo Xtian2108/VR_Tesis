@@ -8785,7 +8785,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2.567647, z: 1.0000002}
-  m_Center: {x: 0.00000006333517, y: 0.283823, z: -0.00000009500276}
+  m_Center: {x: 0.01, y: -2.39, z: 0.77}
 --- !u!33 &302138599
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15093,6 +15093,7 @@ MonoBehaviour:
   hashtag2: {fileID: 258427375}
   verFalsosComentarios: {fileID: 1872825971}
   darOpinion: {fileID: 1823329385}
+  cabeza: {fileID: 0}
 --- !u!1 &526184103
 GameObject:
   m_ObjectHideFlags: 0
@@ -39887,7 +39888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138247430904094, guid: afec65f27dcd2c74cba31fc61eea61e6, type: 3}
       propertyPath: m_TagString
-      value: Mano
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1200292382491122, guid: afec65f27dcd2c74cba31fc61eea61e6, type: 3}
       propertyPath: m_Layer
