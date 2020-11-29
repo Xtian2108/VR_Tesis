@@ -68,7 +68,7 @@ public class AumentarNumero : MonoBehaviour
     public IEnumerator InteraccionFinal(float timer,string scene)
     {
         yield return new WaitForSeconds(timer);
-        fade.fadeColor = Color.red;
+      //  fade.fadeColor = Color.red;
         StartCoroutine(fade.Fade(0f, 1f));
         yield return new WaitForSeconds(2f);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
