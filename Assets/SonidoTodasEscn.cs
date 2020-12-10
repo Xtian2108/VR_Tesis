@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class SonidoTodasEscn : MonoBehaviour
 {
+    private static SonidoTodasEscn _instance;
     // Start is called before the first frame update
     void Awake()
     {
-        var objs = FindObjectOfType<SonidoTodasEscn>();
-        if (objs!=null)
-            Destroy(this.gameObject);
-
-        DontDestroyOnLoad(this.gameObject);
-
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 
 

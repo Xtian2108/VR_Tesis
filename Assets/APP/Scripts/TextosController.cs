@@ -24,7 +24,7 @@ public class TextosController : MonoBehaviour
     {
         while (parte1)
         {
-            for(int i = 0; i < textOne.Length; i++)
+            for (int i = 0; i < textOne.Length; i++)
             {
                 yield return new WaitForSeconds(1f);
                 textOne[i].SetActive(true);
@@ -92,5 +92,6 @@ public class TextosController : MonoBehaviour
             yield return new WaitForSeconds(1f);
             textThree[i].SetActive(false);
         }
+        this.gameObject.SetActive(false);
     }
 }
