@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 949e2937b77e82d4c9afa927be5f537b, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 93963e8e3ee72cc448f978e0373e5ab5, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -3522,8 +3522,8 @@ MonoBehaviour:
     maxAllowedPerFrameDistanceDifference: 0.003
     smoothsRotation: 0
     maxAllowedPerFrameAngleDifference: 1.5
-  validCollisionColor: {r: 0, g: 0.96311355, b: 1, a: 1}
-  invalidCollisionColor: {r: 0, g: 0.96470594, b: 1, a: 1}
+  validCollisionColor: {r: 1, g: 0.007843138, b: 0, a: 1}
+  invalidCollisionColor: {r: 1, g: 1, b: 1, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0
   maximumLength: 100
@@ -55998,8 +55998,8 @@ MonoBehaviour:
     maxAllowedPerFrameDistanceDifference: 0.003
     smoothsRotation: 0
     maxAllowedPerFrameAngleDifference: 1.5
-  validCollisionColor: {r: 0, g: 0.9647059, b: 1, a: 1}
-  invalidCollisionColor: {r: 0, g: 0.9647059, b: 1, a: 1}
+  validCollisionColor: {r: 1, g: 0.007843138, b: 0, a: 1}
+  invalidCollisionColor: {r: 1, g: 1, b: 1, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0
   maximumLength: 100
@@ -80996,7 +80996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &273135018378823067
 Animator:
   serializedVersion: 3
@@ -81243,8 +81243,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273135018378823066}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.11141, y: -2.4496, z: 0.28983}
-  m_LocalScale: {x: 0.20712978, y: 0.20712978, z: 0.20712978}
+  m_LocalPosition: {x: 7.1, y: -83.18, z: 140.23}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1830226253373050855}
   - {fileID: 755511835913425117}

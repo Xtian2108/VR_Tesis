@@ -41,7 +41,7 @@ public class TextosController : MonoBehaviour
         {
             for (int i = 0; i < textTwo.Length; i++)
             {
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(0.8f); //Tiempo
                 textTwo[i].SetActive(true);
             }
             StartCoroutine(MostrarParte3());
